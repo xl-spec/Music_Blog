@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #282c34; /* Dark background for the navbar */
+    padding: 1rem; /* Padding around the items in the navbar */
+    display: flex; /* Using flexbox to align items */
+    justify-content: space-between; /* Distribute space between and around content items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .rightNav {
+    display: flex; /* Using flexbox to align navigation items */
+    gap: 2.0rem; /* Space between each button */
+  }
+  
+  .navbar button {
+    background-color: #61dafb; /* Light blue background for buttons, typical React blue */
+    border: none; /* No borders on buttons */
+    color: #000; /* Text color for the buttons */
+    padding: 0.5rem 1rem; /* Padding inside the buttons */
+    /* border-radius: 5px; Rounded corners for the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    /* transition: background-color 0.3s; Smooth transition for hover effect */
+  }
+  
+  .navbar button:hover {
+    background-color: #21a1f1; /* Darker shade of blue on hover */
+  }
+  
+  .navbar input[type="text"] {
+    padding: 0.5rem; /* Padding inside the input field */
+    border: 2px solid #61dafb; /* Border to match button color */
+    /* border-radius: 5px; Rounded corners for the input field */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .navbar input[type="text"]:focus {
+    border-color: #21a1f1; /* Change border color when input is focused */
+  }
+  
