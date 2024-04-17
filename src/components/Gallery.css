@@ -1,0 +1,17 @@
+.gallery-wrapper {
+    display: grid;
+    align-items: start;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .gallery-wrapper:medium {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .gallery-wrapper:tiny {
+    grid-template-columns: 1fr;
+  }
