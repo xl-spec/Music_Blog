@@ -1,0 +1,19 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "My First Blog Post",
+        "date": "2024-01-01",
+        "description": "A brief introduction to my blog.",
+        "markdownPath": "posts/post1.md"
+      },
+      {
+        "id": 2,
+        "title": "Exploring React Components",
+        "date": "2024-02-15",
+        "description": "Deep dive into React components.",
+        "markdownPath": "posts/post2.md"
+      }
+    ]
+  }
+  

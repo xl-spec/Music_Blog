@@ -1,38 +1,62 @@
+/* Style for the Home button container */
+.homeButtonContainer {
+  background-color: #282c34; /* Matching navbar background */
+  padding: 1rem; /* Padding around the home button */
+  display: flex; /* Using flexbox for alignment */
+  justify-content: center; /* Centering content horizontally */
+  align-items: center; /* Centering content vertically */
+}
+
+/* Style for the Home button itself */
+.homeButton {
+  background-color: #61dafb; /* Light blue background, typical React blue */
+  color: #000; /* Text color for the button */
+  font-size: 1.25rem; /* Larger font size for better visibility */
+  padding: 0.75rem 1.5rem; /* Larger padding for a bigger button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Removing underline from link */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for effects */
+}
+
+.homeButton:hover {
+  background-color: #21a1f1; /* Darker shade of blue on hover */
+  transform: scale(1.05); /* Slight increase in scale on hover */
+}
+
+/* Ensuring full-width navbar */
 .navbar {
-    background-color: #282c34; /* Dark background for the navbar */
-    padding: 1rem; /* Padding around the items in the navbar */
-    display: flex; /* Using flexbox to align items */
-    justify-content: space-between; /* Distribute space between and around content items */
-    align-items: center; /* Center items vertically */
-  }
-  
-  .rightNav {
-    display: flex; /* Using flexbox to align navigation items */
-    gap: 2.0rem; /* Space between each button */
-  }
-  
-  .navbar button {
-    background-color: #61dafb; /* Light blue background for buttons, typical React blue */
-    border: none; /* No borders on buttons */
-    color: #000; /* Text color for the buttons */
-    padding: 0.5rem 1rem; /* Padding inside the buttons */
-    /* border-radius: 5px; Rounded corners for the buttons */
-    cursor: pointer; /* Pointer cursor on hover */
-    /* transition: background-color 0.3s; Smooth transition for hover effect */
-  }
-  
-  .navbar button:hover {
-    background-color: #21a1f1; /* Darker shade of blue on hover */
-  }
-  
-  .navbar input[type="text"] {
-    padding: 0.5rem; /* Padding inside the input field */
-    border: 2px solid #61dafb; /* Border to match button color */
-    /* border-radius: 5px; Rounded corners for the input field */
-    outline: none; /* Remove default focus outline */
-  }
-  
-  .navbar input[type="text"]:focus {
-    border-color: #21a1f1; /* Change border color when input is focused */
-  }
-  
+  background-color: #282c34;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightNav {
+  display: flex;
+  gap: 2.0rem;
+}
+
+.navbar button {
+  background-color: #61dafb;
+  border: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #21a1f1;
+}
+
+.navbar input[type="text"] {
+  padding: 0.5rem;
+  border: 2px solid #61dafb;
+  outline: none;
+}
+
+.navbar input[type="text"]:focus {
+  border-color: #21a1f1;
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { marked } from 'marked';
-import postContent from '../posts/tempblog.md';
+import postContent from '../data/posts/tempblog.md';
 import './BlogPost.css';
 
 const BlogPost = ({ title, imageUrl, linkUrl }) => {
