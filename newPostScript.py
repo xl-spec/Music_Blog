@@ -15,7 +15,6 @@ new_post = {
     "myDate": "2024-04-18",
     "releaseDate": "2024-04-18",
     "genre": ["rock"],
-    # "description": "Learn about advanced concepts in React.",
     "markdownPath": "posts/post3.md"
 }
 

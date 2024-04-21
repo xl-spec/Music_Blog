@@ -1,19 +1,24 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "My First Blog Post",
-        "date": "2024-01-01",
-        "description": "A brief introduction to my blog.",
-        "markdownPath": "posts/post1.md"
-      },
-      {
-        "id": 2,
-        "title": "Exploring React Components",
-        "date": "2024-02-15",
-        "description": "Deep dive into React components.",
-        "markdownPath": "posts/post2.md"
-      }
-    ]
-  }
-  
+  "posts": [
+    {
+      "id": 1,
+      "artist": "Unknown",
+      "name": "My First Blog Post",
+      "myDate": "2024-01-01",
+      "releaseDate": "2024-01-01",
+      "genre": ["blog"],
+      "markdownPath": "posts/post1.md",
+      "imageUrl": "../../MusicParser/Images/cj2GCx1zeeo&si=LN30DhRFHoLidLWG.jpg"
+    },
+    {
+      "id": 2,
+      "artist": "Unknown",
+      "name": "Exploring React Components",
+      "myDate": "2024-02-15",
+      "releaseDate": "2024-02-15",
+      "genre": ["tech", "blog"],
+      "markdownPath": "posts/post2.md",
+      "imageUrl": "https://example.com/path/to/image2.jpg"
+    }
+  ]
+}
