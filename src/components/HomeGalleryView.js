@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Use Link for SPA-like navigation
-import './BlogPost.css';
+import './HomeGalleryView.css';
 
 const BlogPost = ({ title, imageUrl, linkUrl }) => {
   return (

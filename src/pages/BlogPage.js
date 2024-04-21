@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import postsData from '../data/posts.json'; // Import the JSON data
 import { marked } from 'marked';
+import styles from './BlogPage.css';
 
 function BlogPost() {
   const { postId } = useParams();
@@ -18,7 +19,12 @@ function BlogPost() {
             content: marked(markdown) // Convert markdown to HTML here
           });
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+          console.log(error);
+          setPost({ error: "Failed to load post content." }); // Handle errors during fetch
+        });
+    } else {
+      setPost({ error: "Post not found." }); // Handle case where post is not found
     }
   }, [postId]);
 
@@ -26,11 +32,14 @@ function BlogPost() {
     return <div>Loading...</div>;
   }
 
+  if (post.error) {
+    return <div>Error: {post.error}</div>; // Display errors if any
+  }
+
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <img src={`../assets/${post.id}.jpg`} alt={post.title} /> // Assuming images are named by post ID
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    <div className={styles['blog-post']}>
+      <img src={post.imageUrl} alt={post.name} className={styles['blog-post-img']} />
+      <div dangerouslySetInnerHTML={{ __html: post.content }} className={styles['blog-post-content']} />  
     </div>
   );
 }

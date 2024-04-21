@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPost from '../components/BlogPost';
+import HomeGalleryView from '../components/HomeGalleryView';
 import postsData from '../data/posts.json'; // Assuming the JSON file is stored here
 import './HomePage.css';
 
@@ -11,7 +11,7 @@ function HomePage() {
       <h2>Recent Posts</h2>
       <section className="content">
         {posts.map(post => (
-          <BlogPost key={post.id} title={post.name} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
+          <HomeGalleryView key={post.id} title={post.name} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
         ))}
       </section>
     </div>

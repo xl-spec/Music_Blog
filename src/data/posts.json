@@ -7,8 +7,8 @@
       "myDate": "2024-01-01",
       "releaseDate": "2024-01-01",
       "genre": ["blog"],
-      "markdownPath": "posts/post1.md",
-      "imageUrl": "../../MusicParser/Images/cj2GCx1zeeo&si=LN30DhRFHoLidLWG.jpg"
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/cj2GCx1zeeo%26si%3DLN30DhRFHoLidLWG.jpg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "releaseDate": "2024-02-15",
       "genre": ["tech", "blog"],
       "markdownPath": "posts/post2.md",
-      "imageUrl": "https://example.com/path/to/image2.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/kSl8gNT2-bU%26si%3DO_AIhq1RlmgJknJb.jpg"
     }
   ]
 }
