@@ -2,23 +2,112 @@
   "posts": [
     {
       "id": 1,
-      "artist": "Unknown",
-      "name": "My First Blog Post",
+      "artist": "song1",
+      "name": "artist",
       "myDate": "2024-01-01",
       "releaseDate": "2024-01-01",
-      "genre": ["blog"],
+      "genre": [
+        "rock"
+      ],
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/cj2GCx1zeeo%26si%3DLN30DhRFHoLidLWG.jpg"
     },
     {
       "id": 2,
-      "artist": "Unknown",
-      "name": "Exploring React Components",
+      "artist": "song2",
+      "name": "arttttist",
       "myDate": "2024-02-15",
       "releaseDate": "2024-02-15",
-      "genre": ["tech", "blog"],
+      "genre": [
+        "rock",
+        "blues"
+      ],
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/kSl8gNT2-bU%26si%3DO_AIhq1RlmgJknJb.jpg"
+    },
+    {
+      "id": 3,
+      "artist": "Sobs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/0QO5_QGS5ds&si=rnRfdZ3UADPe3Cas.jpg"
+    },
+    {
+      "id": 4,
+      "artist": "Sobs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/9YvkFX3AML4&si=SbZgr7NG7-5MMEL7.jpg"
+    },
+    {
+      "id": 5,
+      "artist": "Sobs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/aXTyZovrPuA&si=8Q2QE3ZiUOqZCUll.jpg"
+    },
+    {
+      "id": 6,
+      "artist": "Sodddbs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/BTqNemB6mio&si=EWlCAM6XRFOvMUWc.jpg"
+    },
+    {
+      "id": 7,
+      "artist": "Sodddbs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/Q6FarZpy67M&si=5K16onUnTq-F6uo9.jpg"
+    },
+    {
+      "id": 8,
+      "artist": "Sodddbs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/RyZNIw_IHpo&si=FqQFp9bHzBSOxxeC.jpg"
+    },
+    {
+      "id": 6,
+      "artist": "Sodddbs",
+      "name": "LOML",
+      "myDate": "2024-04-18",
+      "releaseDate": "2024-04-18",
+      "genre": [
+        "rock"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/WjQKF1eD2Zs&si=m_1PaOlmVZWqbaa_.jpg"
     }
   ]
 }
