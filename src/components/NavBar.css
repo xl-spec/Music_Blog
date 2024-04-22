@@ -1,6 +1,6 @@
 /* Style for the Home button container */
 .homeButtonContainer {
-  background-color: #282c34; /* Matching navbar background */
+  background-color: #ddb9ff; /* Matching navbar background */
   padding: 1rem; /* Padding around the home button */
   display: flex; /* Using flexbox for alignment */
   justify-content: center; /* Centering content horizontally */
@@ -9,15 +9,15 @@
 
 /* Style for the Home button itself */
 .homeButton {
-  background-color: #61dafb; /* Light blue background, typical React blue */
+  background-color: #996096; /* Light blue background, typical React blue */
   color: #000; /* Text color for the button */
   font-size: 1.25rem; /* Larger font size for better visibility */
   padding: 0.75rem 1.5rem; /* Larger padding for a bigger button */
   border: none; /* No border */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 16px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
   text-decoration: none; /* Removing underline from link */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for effects */
+  /* transition: background-color 0.3s, transform 0.2s;  */
 }
 
 .homeButton:hover {
@@ -27,7 +27,7 @@
 
 /* Ensuring full-width navbar */
 .navbar {
-  background-color: #282c34;
+  background-color: #80aaff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -42,13 +42,13 @@
 .navbar button {
   background-color: #61dafb;
   border: none;
-  color: #000;
+  color: #ffb0b0;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 .navbar button:hover {
-  background-color: #21a1f1;
+  background-color: #ecf8ff;
 }
 
 .navbar input[type="text"] {
@@ -57,6 +57,6 @@
   outline: none;
 }
 
-.navbar input[type="text"]:focus {
+/* .navbar input[type="text"]:focus {
   border-color: #21a1f1;
-}
+} */

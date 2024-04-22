@@ -4,10 +4,10 @@ import postsData from '../data/posts.json'; // Assuming the JSON file is stored 
 import './HomePage.css';
 
 function HomePage() {
-  const posts = postsData.posts; 
+  const posts = postsData.posts;
 
   return (
-    <div className="HomePage">
+    <div className="home-page">
       <h2>Recent Posts</h2>
       <section className="content">
         {posts.map(post => (

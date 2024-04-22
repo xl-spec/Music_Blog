@@ -37,7 +37,6 @@ class MusicParser():
     def makeSquare(self, img_path):
         with Image.open(img_path) as img:
             print(f"Original dimensions: {img.size}")
-            # Find the size of the smallest dimension to create the largest possible square
             min_dim = min(img.size)
             left = (img.width - min_dim) // 2
             top = (img.height - min_dim) // 2
