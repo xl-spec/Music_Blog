@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link if using React Router
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -10,12 +10,12 @@ const NavBar = () => {
       </div>
       <nav className="navbar">
         <div className="rightNav">
-          <button className="albumPageButton">Album</button>
-          <button className="singlePageButton">Single</button>
-          <button className="mashupOrEditPageButton">Mashup/Edits</button>
-          <button className="top10PageButton">Top 10</button>
+          <Link to="/albums" className="navButton albumPageButton">Album</Link>
+          <Link to="/singles" className="navButton singlePageButton">Single</Link>
+          <Link to="/mashupsoredits" className="navButton mashupOrEditPageButton">Mashup/Edits</Link>
+          <Link to="/top10" className="navButton top10PageButton">Top 10</Link>
           <input type="text" name="search" id="search" placeholder="Search..." />
-          <button className="searchButton">Search</button>
+          <Link to="/search" className="navButton searchButton">Search</Link>
         </div>
       </nav>
     </div>

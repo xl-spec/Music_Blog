@@ -4,7 +4,7 @@ import postsData from '../data/posts.json'; // Assuming the JSON file is stored 
 import './HomePage.css';
 
 function HomePage() {
-  const posts = postsData.posts; // Access the posts array from the JSON data
+  const posts = postsData.posts; 
 
   return (
     <div className="HomePage">
