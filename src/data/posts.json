@@ -2,14 +2,16 @@
   "posts": [
     {
       "id": 1,
-      "artist": "song1",
-      "name": "artist",
-      "myDate": "2024-01-01",
-      "releaseDate": "2024-01-01",
+      "artist": "Sobs",
+      "name": "LOML",
+      "myDate": "2024-04-24",
+      "releaseDate": "2022-10-26",
       "genre": [
-        "rock"
+        "pop",
+        "indie pop",
+        "indie"
       ],
-      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/tempblog.md",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/sobslomltemp.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/MusicParser/Images/cj2GCx1zeeo%26si%3DLN30DhRFHoLidLWG.jpg"
     },
     {

@@ -8,6 +8,7 @@ class MusicParser():
     def __init__(self):
         self.id = None
         self.color_wheel = []
+        self.palette = []
     
     def setId(self, song_url):
         self.id = song_url.split("v=")[-1]
@@ -31,7 +32,9 @@ class MusicParser():
         # print(palette)
     
     def printColorWheel(self):
+        print(self.color_wheel)
         for count, color in enumerate(self.color_wheel):
+            # print(count)
             print(f'\033[38;2;{color[0]};{color[1]};{color[2]}mColor{count + 1}\033[0m', end=" ")
     
     def makeSquare(self, img_path):
@@ -48,9 +51,9 @@ class MusicParser():
             print(f"Cropped to square dimensions: {img_cropped.size}")
 
 parser = MusicParser()
-link = input("enter link:\n")
-# parser.setId("https://www.youtube.com/watch?v=mAxEIsWJ2xA")
-parser.setId(link)
+# link = input("enter link:\n")
+parser.setId("https://music.youtube.com/watch?v=RPHCC86abXo&si=PmB-Y4HMqE8llOmx")
+# parser.setId(link)
 parser.getArt()
 parser.getColorWheel()
 parser.printColorWheel()
