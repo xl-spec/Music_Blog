@@ -14,6 +14,7 @@ class MusicParser():
             'artist': None,
             'release_date': None
         }
+        self.fileName = None
 
     def setId(self, song_url):
         self.id = song_url.split("v=")[-1]
@@ -44,8 +45,8 @@ class MusicParser():
         if not self.data['release_date']:
             upload_date = soup.find("meta", itemprop="uploadDate")
             if upload_date:
-                self.data['release_date'] = upload_date["content"]
-
+                self.data['release_date'] = upload_date["content"].split("T")[0]
+                
         print(self.data)
         return self.data
 
@@ -68,7 +69,7 @@ class MusicParser():
     
     def getColorWheel(self):
         color_thief = ColorThief(f"../src/data/Album_Art/{self.id}.jpg")
-        palette = color_thief.get_palette(color_count=6, quality=1)
+        palette = color_thief.get_palette(color_count=3, quality=1)
         self.color_wheel = palette
     
     def printColorWheel(self):
@@ -84,14 +85,20 @@ class MusicParser():
             top = (img.height - min_dim) // 2
             right = (img.width + min_dim) // 2
             bottom = (img.height + min_dim) // 2
-            # Crop the image to the calculated square
+            # crop it so it's a square in the middle
             img_cropped = img.crop((left, top, right, bottom))
             img_cropped.save(img_path)
             print(f"Cropped to square dimensions: {img_cropped.size}")
 
+
+############
+# def createPost(self) # makes the md file
+
+
+
 parser = MusicParser()
 # link = input("enter link:\n")
-parser.setId("https://music.youtube.com/watch?v=K8B_XDKozvA&si=cbrFe1fDN5i5VJ4l")
+parser.setId("https://music.youtube.com/watch?v=-BLNfBB6D2Y&si=NSP4CaQoZYD4tQVo")
 parser.getData()
 # parser.setId(link)
 parser.getArt()
