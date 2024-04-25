@@ -1,6 +1,6 @@
 import json
 
-def add_post(new_post, filepath='src/data/posts.json'):
+def add_post(new_post, filepath='../src/data/posts.json'):
     with open(filepath, 'r+') as file:
         posts = json.load(file)
         posts['posts'].append(new_post)

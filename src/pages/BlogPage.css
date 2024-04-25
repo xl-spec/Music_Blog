@@ -15,7 +15,7 @@ body {
   margin: 20px auto;
   background: #fff;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 /* Post title */
@@ -28,8 +28,8 @@ body {
 }
 
 /* Post image styles */
-.blog-post img {
-  max-width: 100%;
+.blog-post-img {
+  max-width: 10%;
   height: auto;
   display: block;
   margin: 0 auto 20px;

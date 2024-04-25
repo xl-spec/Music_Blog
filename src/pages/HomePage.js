@@ -11,7 +11,7 @@ function HomePage() {
       <h2>Recent Posts</h2>
       <section className="content">
         {posts.map(post => (
-          <HomeGalleryView key={post.id} title={post.name} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
+          <HomeGalleryView key={post.id} name={post.name} artist={post.artist} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
         ))}
       </section>
     </div>

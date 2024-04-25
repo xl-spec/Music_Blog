@@ -1,32 +1,37 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid */
-  grid-gap: 20px; /* Space between grid items */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  
 }
 
 .blog-post {
-  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  /* background-color: #ffa7a7; */
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the items vertically */
+  flex-direction: row;
+  align-items: center;
   background-color: purple;
+  overflow: hidden;
 }
 
 .blog-post-image {
-  width: 100%; /* Makes the image responsive */
+  width: 50%; /* Makes the image responsive */
   height: auto;
   border-radius: 5px;
+  margin: 20px;
 }
 
 .blog-post-title {
-  color: #333;
-  font-size: 18px; /* Adjusted for space */
-  margin-top: 10px;
-  text-align: center; /* Center align the title */
+  font-size: 24px;
+  text-align: middle;
+  white-space: nowrap; /* Prevents the title from wrapping */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+  margin: 0;
+  text-wrap: pretty;
+  line-height: normal; 
 }
 
 .blog-post-summary {
@@ -43,5 +48,3 @@
 .blog-post:hover {
   background-color: pink;
 }
-/* .blog-post::backdrop */
-

@@ -20,7 +20,6 @@ function App() {
         <Route path="/singles" element={<SinglePage/>} />
         <Route path="/mashupsoredits" element={<MashupOrEditsPage/>} />
         <Route path="/top10" element={<Top10Page/>} />
-        {/* <Route path="/search" component={SearchPage} /> */}
         {/* Additional routes */}
       </Routes>
       {/* <Footer /> */}
