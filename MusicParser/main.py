@@ -59,16 +59,14 @@ class MusicParser():
         response = requests.get(img_url)
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        album_art_dir = os.path.join(script_dir, "../src/data/Album_Art")
+        album_art_dir = os.path.join(script_dir, "../src/data/album_art")
 
-        os.makedirs(album_art_dir, exist_ok=True)
-
-        with open(os.path.join(album_art_dir, f"{self.id}.jpg"), "wb") as f:
+        with open(os.path.join(album_art_dir, f"{self.fileName}.jpg"), "wb") as f:
             f.write(response.content)
-        self.makeSquare(os.path.join(album_art_dir, f"{self.id}.jpg"))
+        self.makeSquare(os.path.join(album_art_dir, f"{self.fileName}.jpg"))
     
     def getColorWheel(self):
-        color_thief = ColorThief(f"../src/data/Album_Art/{self.id}.jpg")
+        color_thief = ColorThief(f"../src/data/album_art/{self.fileName.id}.jpg")
         palette = color_thief.get_palette(color_count=3, quality=1)
         self.color_wheel = palette
     
@@ -89,18 +87,29 @@ class MusicParser():
             img_cropped = img.crop((left, top, right, bottom))
             img_cropped.save(img_path)
             print(f"Cropped to square dimensions: {img_cropped.size}")
+    
+    def setFileName(self):
+        artist = self.data['artist'].replace(" ", "-")
+        title = self.data['title'].replace(" ", "-")
+        self.fileName = f"{artist}_{title}"
 
+    def createPost(self): # makes the md file
+        post_dir = os.path.join(os.path.dirname(__file__), "../src/data/posts")
+        post_file_path = os.path.join(post_dir, f"{self.fileName}.md")
+        with open(post_file_path, "w") as f:
+            f.write("")
 
-############
-# def createPost(self) # makes the md file
+        print(f"Post created: {post_file_path}")
 
 
 
 parser = MusicParser()
-# link = input("enter link:\n")
-parser.setId("https://music.youtube.com/watch?v=-BLNfBB6D2Y&si=NSP4CaQoZYD4tQVo")
+link = input("enter link:\n")
+parser.setId(link)
+# parser.setId("https://music.youtube.com/watch?v=-BLNfBB6D2Y&si=NSP4CaQoZYD4tQVo")
 parser.getData()
-# parser.setId(link)
+parser.setFileName()
 parser.getArt()
+parser.createPost()
 # parser.getColorWheel()
 # parser.printColorWheel()
