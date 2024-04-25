@@ -1,10 +1,9 @@
-# import os
+import os
 import requests
 from bs4 import BeautifulSoup
 from colorthief import ColorThief
 from PIL import Image
 import re
-from datetime import datetime
 class MusicParser():
     def __init__(self):
         self.id = None
@@ -32,12 +31,14 @@ class MusicParser():
         if artist:
             self.data['artist'] = artist["content"]
         
+        # gets the date from description which youtube provides
+        # if it's not found then it's gonna use the release date of the vid instead
+
         description = soup.find("meta", property="og:description")
         date_pattern = re.compile(r'Released on: (\d{4}-\d{2}-\d{2})')
         if description:
             dates = date_pattern.findall(description["content"])
             if dates:
-                # Use the first found date as string
                 self.data['release_date'] = dates[0]
 
         if not self.data['release_date']:
@@ -56,20 +57,23 @@ class MusicParser():
         img_url = soup.find("meta", property="og:image")["content"]
         response = requests.get(img_url)
 
-        with open(f"Album_Art/{self.id}.jpg", "wb") as f:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        album_art_dir = os.path.join(script_dir, "../src/data/Album_Art")
+
+        os.makedirs(album_art_dir, exist_ok=True)
+
+        with open(os.path.join(album_art_dir, f"{self.id}.jpg"), "wb") as f:
             f.write(response.content)
-        self.makeSquare(f"Album_Art/{self.id}.jpg")
+        self.makeSquare(os.path.join(album_art_dir, f"{self.id}.jpg"))
     
     def getColorWheel(self):
-        color_thief = ColorThief(f"Album_Art/{self.id}.jpg")
+        color_thief = ColorThief(f"../src/data/Album_Art/{self.id}.jpg")
         palette = color_thief.get_palette(color_count=6, quality=1)
         self.color_wheel = palette
-        # print(palette)
     
     def printColorWheel(self):
         print(self.color_wheel)
         for count, color in enumerate(self.color_wheel):
-            # print(count)
             print(f'\033[38;2;{color[0]};{color[1]};{color[2]}mColor{count + 1}\033[0m', end=" ")
     
     def makeSquare(self, img_path):
@@ -87,9 +91,9 @@ class MusicParser():
 
 parser = MusicParser()
 # link = input("enter link:\n")
-parser.setId("https://music.youtube.com/watch?v=RPHCC86abXo&si=PmB-Y4HMqE8llOmx")
+parser.setId("https://music.youtube.com/watch?v=K8B_XDKozvA&si=cbrFe1fDN5i5VJ4l")
 parser.getData()
 # parser.setId(link)
-# parser.getArt()
+parser.getArt()
 # parser.getColorWheel()
 # parser.printColorWheel()
