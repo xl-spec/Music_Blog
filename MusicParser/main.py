@@ -15,6 +15,7 @@ class MusicParser():
             'release_date': None
         }
         self.fileName = None
+        self.type = None # either single, album, or mashup/edits
 
     def setId(self, song_url):
         self.id = song_url.split("v=")[-1]
