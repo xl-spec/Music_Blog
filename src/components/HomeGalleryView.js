@@ -7,7 +7,7 @@ const HomeGalleryView = ({ name, artist, imageUrl, linkUrl }) => {
     <Link to={linkUrl} className="home-gallery-link">
       <div className="home-gallery-post">
         <img src={imageUrl} alt={name} className="home-gallery-image" />
-        <h2 className="home-gallery-title">{name + " by " + artist}</h2>
+        <h2 className="home-gallery-title">{name + " - " + artist}</h2>
       </div>
     </Link>
   );

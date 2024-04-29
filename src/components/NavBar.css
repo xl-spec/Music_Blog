@@ -1,6 +1,6 @@
 /* Style for the Home button container */
 .homeButtonContainer {
-  background-color: #ddb9ff; /* Matching navbar background */
+  background-color: #ffddfc;
   padding: 1rem; /* Padding around the home button */
   display: flex; /* Using flexbox for alignment */
   justify-content: center; /* Centering content horizontally */
@@ -9,7 +9,7 @@
 
 /* Style for the Home button itself */
 .homeButton {
-  background-color: #996096; /* Light blue background, typical React blue */
+  background-color: #80aaff;
   color: #000; /* Text color for the button */
   font-size: 1.25rem; /* Larger font size for better visibility */
   padding: 0.75rem 1.5rem; /* Larger padding for a bigger button */
@@ -27,7 +27,7 @@
 
 /* Ensuring full-width navbar */
 .navbar {
-  background-color: #80aaff;
+  background-color: #ffddfc;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,7 @@
 }
 
 .navbar button {
-  background-color: #61dafb;
+  background-color: #3a9fbb;
   border: none;
   color: #ffb0b0;
   padding: 0.5rem 1rem;
@@ -50,13 +50,3 @@
 .navbar button:hover {
   background-color: #ecf8ff;
 }
-
-.navbar input[type="text"] {
-  padding: 0.5rem;
-  border: 2px solid #61dafb;
-  outline: none;
-}
-
-/* .navbar input[type="text"]:focus {
-  border-color: #21a1f1;
-} */

@@ -10,7 +10,7 @@ const NavBar = () => {
       </div>
       <nav className="navbar">
         <div className="rightNav">
-          <Link to="/albums" className="navButton albumPageButton">Album</Link>
+          <Link to="/albums" className="navbar button">Album</Link>
           <Link to="/singles" className="navButton singlePageButton">Single</Link>
           <Link to="/mashupsoredits" className="navButton mashupOrEditPageButton">Mashup/Edits</Link>
           <Link to="/top10" className="navButton top10PageButton">Top 10</Link>
