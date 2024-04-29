@@ -1,20 +1,8 @@
-/* General body styling */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
 
 /* Main content area */
 .blog-post {
-  width: 80%;
-  max-width: 800px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
+  width: 100%;
+  background: #c42f2f;
   text-align: center;
 }
 
@@ -55,19 +43,3 @@ body {
 .blog-post-content a:hover {
   text-decoration: underline;
 }
-
-/* Error message styling */
-.error {
-  color: red;
-  font-size: 16px;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Loading message styling */
-.loading {
-  text-align: center;
-  padding: 50px;
-  font-size: 16px;
-}
-

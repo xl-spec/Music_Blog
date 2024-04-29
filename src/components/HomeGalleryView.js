@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Use Link for SPA-like navigation
+import { Link } from 'react-router-dom';
 import './HomeGalleryView.css';
 
-const BlogPost = ({ name, artist, imageUrl, linkUrl }) => {
+const HomeGalleryView = ({ name, artist, imageUrl, linkUrl }) => {
   return (
-    <Link to={linkUrl} className="blog-post-link">
-      <div className="blog-post">
-        <img src={imageUrl} alt={name} className="blog-post-image" />
-        <h2 className="blog-post-title">{name + " by "+ artist}</h2>
+    <Link to={linkUrl} className="home-gallery-link">
+      <div className="home-gallery-post">
+        <img src={imageUrl} alt={name} className="home-gallery-image" />
+        <h2 className="home-gallery-title">{name + " by " + artist}</h2>
       </div>
     </Link>
   );
 };
 
-export default BlogPost;
+export default HomeGalleryView;

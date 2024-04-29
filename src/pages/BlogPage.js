@@ -37,9 +37,11 @@ function BlogPost() {
   }
 
   return (
-    <div className={styles['blog-post']}>
-      <img src={post.imageUrl} alt={post.name} className={styles['blog-post-img']} />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} className={styles['blog-post-content']} />  
+    <div className='blog-post'>
+      <h1>{post.name} </h1>
+      <h2>{post.artist}</h2>
+      <img src={post.imageUrl} alt={post.name} className='blog-post-img' />
+      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blogContent'/>  
     </div>
   );
 }

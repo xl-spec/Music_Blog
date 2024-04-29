@@ -25,11 +25,11 @@ class MusicParser():
         headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"}
         response = requests.get(html_url, headers=headers)
         soup = BeautifulSoup(response.content, "html.parser")
-        # thank you https://stackoverflow.com/questions/72354649/how-to-scrape-youtube-video-description-with-beautiful-soup
 
+        # thank you https://stackoverflow.com/questions/72354649/how-to-scrape-youtube-video-description-with-beautiful-soup
         pattern = re.compile('(?<=shortDescription":").*(?=","isCrawlable)')
         description = pattern.findall(str(soup))[0].replace('\\n','\n')
-
+        
         self.process_description(description)
 
         # gets the date from description which youtube provides
@@ -44,20 +44,31 @@ class MusicParser():
         return self.data
 
     def process_description(self, description_content):
+        # function to get the song name & artists
         lines = description_content.split('\n')
+        infoFound = False
+        print(lines)
         for line in lines:
             if '·' in line:
                 parts = line.split('·')
                 if parts:
+                    infoFound = True   
                     self.data['title'] = parts[0].strip()
                     self.data['artist'] = [part.strip() for part in parts[1:]]
-                    break  # Assuming the first occurrence is the correct one
+                    break
+        
+        if not infoFound:
+            # temp fix for mashup/edited songs. 
+            # These songs don't have a autoyoutube generated description, i will edit manually
+            self.data['title'] = ''
+            self.data['artist'] = ''
 
         date_match = re.search(r'Released on: (\d{4}-\d{2}-\d{2})', description_content)
         if date_match:
             self.data['release_date'] = date_match.group(1)
             
     def getArt(self):
+        # puts picture into folder
         html_url = f"https://www.youtube.com/watch?v={self.id}"
         response = requests.get(html_url)
         soup = BeautifulSoup(response.content, "html.parser")
@@ -71,8 +82,10 @@ class MusicParser():
         with open(os.path.join(album_art_dir, f"{self.fileName}.jpg"), "wb") as f:
             f.write(response.content)
         self.makeSquare(os.path.join(album_art_dir, f"{self.fileName}.jpg"))
+        print(f"Picture made")
     
     def getColorWheel(self):
+        # color wheel, will expand this later and pass this through the css
         color_thief = ColorThief(f"../src/data/album_arts/{self.fileName.id}.jpg")
         palette = color_thief.get_palette(color_count=3, quality=1)
         self.color_wheel = palette
@@ -83,8 +96,9 @@ class MusicParser():
             print(f'\033[38;2;{color[0]};{color[1]};{color[2]}mColor{count + 1}\033[0m', end=" ")
     
     def makeSquare(self, img_path):
+        # crops the image to be a perfect square
         with Image.open(img_path) as img:
-            print(f"Original dimensions: {img.size}")
+            # print(f"Original dimensions: {img.size}")
             min_dim = min(img.size)
             left = (img.width - min_dim) // 2
             top = (img.height - min_dim) // 2
@@ -100,7 +114,7 @@ class MusicParser():
         artist = "--".join(artist.replace(" ", "-") for artist in self.data['artist'])
         title = self.data['title'].replace(" ", "-")
         self.fileName = f"{artist}_{title}".lower()
-        print(f"File: {self.fileName}")
+        print(f"File Set: {self.fileName}")
 
     def createPost(self): # makes the md file
         post_dir = os.path.join(os.path.dirname(__file__), "../src/data/posts")
@@ -111,15 +125,14 @@ class MusicParser():
         print(f"Post created: {post_file_path}")
 
 
-
 parser = MusicParser()
-# link = input("enter link:\n")
-# parser.setId(link)
-parser.setId("https://www.youtube.com/watch?v=Q--Wk-5sXDA&ab_channel=Cochise-Topic")
+link = input("enter link:\n")
+parser.setId(link)
+# parser.setId("https://music.youtube.com/watch?v=-BLNfBB6D2Y&si=Lvl2XJytJT7LO_bB")
 parser.getData()
 parser.setFileName()
-# parser.getArt()
-# parser.createPost()
+parser.getArt()
+parser.createPost()
 
 # parser.getColorWheel()
 # parser.printColorWheel()

@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <h2>Recent Posts</h2>
-      <section className="content">
+      <section className="home-gallery-content">
         {posts.map(post => (
           <HomeGalleryView key={post.id} name={post.name} artist={post.artist} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
         ))}
