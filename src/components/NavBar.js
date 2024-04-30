@@ -10,12 +10,12 @@ const NavBar = () => {
       </div>
       <nav className="navbar">
         <div className="rightNav">
-          <Link to="/albums" className="navbar button">Album</Link>
-          <Link to="/singles" className="navButton singlePageButton">Single</Link>
-          <Link to="/mashupsoredits" className="navButton mashupOrEditPageButton">Mashup/Edits</Link>
-          <Link to="/top10" className="navButton top10PageButton">Top 10</Link>
-          <input type="text" name="search" id="search" placeholder="Search..." />
-          <Link to="/search" className="navButton searchButton">Search</Link>
+          <Link to="/albums" className="navbar-button">Album</Link>
+          <Link to="/singles" className="navbar-button">Single</Link>
+          <Link to="/mashupsoredits" className="navbar-button">Mashup/Edits</Link>
+          <Link to="/top10" className="navbar-button">Top 10</Link>
+          <Link to="/search" className="navbar-button">Search</Link>
+          <input type="text" name="search" id="search" placeholder="    search..." />
         </div>
       </nav>
     </div>
