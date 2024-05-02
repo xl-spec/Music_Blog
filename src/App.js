@@ -11,16 +11,15 @@ import Top10Page from './pages/Top10Page';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/posts/:postId" element={<BlogPostPage />} />
-        <Route path="/albums" element={<AlbumPage />} />
-        <Route path="/singles" element={<SinglePage/>} />
-        <Route path="/mashupsoredits" element={<MashupOrEditsPage/>} />
-        <Route path="/top10" element={<Top10Page/>} />
-        {/* Additional routes */}
+        <Route path="posts/:postId" element={<BlogPostPage />} />
+        <Route path="albums" element={<AlbumPage />} />
+        <Route path="singles" element={<SinglePage />} />
+        <Route path="mashupsoredits" element={<MashupOrEditsPage />} />
+        <Route path="top10" element={<Top10Page />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
