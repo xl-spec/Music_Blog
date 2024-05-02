@@ -128,8 +128,8 @@ class MusicParser():
             "type": self.type,
             "palette": self.palette,
             "genre": ["To be added"],
-            "markdownPath": f"https://raw.githubusercontent.com/yourusername/Music_Blog/main/src/data/posts/{self.fileName}.md",
-            "imageUrl": f"https://raw.githubusercontent.com/yourusername/Music_Blog/main/src/data/album_arts/{self.fileName}.jpg"
+            "markdownPath": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/{self.fileName}.md",
+            "imageUrl": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/{self.fileName}.jpg"
         }
 
         # for i in new_post:

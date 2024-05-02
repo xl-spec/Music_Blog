@@ -145,8 +145,45 @@
       "genre": [
         "To be added"
       ],
-      "markdownPath": "https://raw.githubusercontent.com/yourusername/Music_Blog/main/src/data/posts/doja-cat_streets.md",
-      "imageUrl": "https://raw.githubusercontent.com/yourusername/Music_Blog/main/src/data/album_arts/doja-cat_streets.jpg"
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_streets.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_streets.jpg"
+    },
+    {
+      "id": "yCkLC9vQ_Fg&si=v3lC1rKrHiDyS5iq",
+      "artist": [
+        "Doja Cat"
+      ],
+      "name": "Streets",
+      "myDate": "todayyyy",
+      "releaseDate": "2019-11-07",
+      "type": null,
+      "palette": [
+        [
+          246,
+          122,
+          167
+        ],
+        [
+          180,
+          54,
+          60
+        ],
+        [
+          250,
+          212,
+          222
+        ],
+        [
+          91,
+          16,
+          23
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_streets.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_streets.jpg"
     }
   ]
 }
