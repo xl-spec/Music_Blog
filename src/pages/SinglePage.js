@@ -4,7 +4,7 @@ import './SinglePage.css';
 const SinglePage = () => {
   return (
     <div className="single-page">
-      <h1>Singlessss</h1>
+      <h1>Singlessss4</h1>
     </div>
   );
 };
