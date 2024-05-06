@@ -30,7 +30,7 @@ class MusicParser():
         pattern = re.compile('(?<=shortDescription":").*(?=","isCrawlable)')
         description = pattern.findall(str(soup))[0].replace('\\n','\n')
         
-        self.process_description(description)
+        self.processDescription(description)
 
         # gets the date from description which youtube provides
         # if it's not found then it's gonna use the release date of the vid instead
@@ -43,7 +43,7 @@ class MusicParser():
         print(self.data)
         return self.data
 
-    def process_description(self, description_content): # function to get the song name & artists
+    def processDescription(self, description_content): # function to get the song name & artists
         lines = description_content.split('\n')
         infoFound = False
 
@@ -116,11 +116,11 @@ class MusicParser():
 
         print(f"Post created: {post_file_path}")
 
-    def genPost(self):
+    def genPost(self): # generates a new json file to later be added to posts.json
         post_dir = os.path.join(os.path.dirname(__file__), "../src/data")
         # post_file_path = os.path.join(post_dir, f"{self.fileName}.md")
         new_post = {
-            "id": self.id,
+            "id": self.fileName,
             "artist": self.data['artist'],
             "name": self.data['title'],
             "myDate": 'todayyyy',
@@ -140,17 +140,14 @@ class MusicParser():
             json.dump(new_post, file, indent=2)
         print("New post data saved:", new_post_path)
 
-    def addPost(self):
-        # This function reads newPost.json and adds its content to posts.json
+    def addPost(self): # function to add newPost.json into posts.json
         post_dir = os.path.join(os.path.dirname(__file__), "../src/data")
         new_post_path = os.path.join(post_dir, "newPost.json")
         posts_json_path = os.path.join(post_dir, "posts.json")
 
-        # Load the new post from newPost.json
         with open(new_post_path, 'r') as file:
             new_post = json.load(file)
 
-        # Load the existing posts and append the new post
         with open(posts_json_path, 'r+') as file:
             posts = json.load(file)
             posts['posts'].append(new_post)
@@ -160,9 +157,9 @@ class MusicParser():
         print("New post added to posts.json")
         
 parser = MusicParser()
-# link = input("enter link:\n")
-# parser.setId(link)
-parser.setId("https://music.youtube.com/watch?v=yCkLC9vQ_Fg&si=v3lC1rKrHiDyS5iq")
+link = input("enter link:\n")
+parser.setId(link)
+# parser.setId("https://music.youtube.com/watch?v=yCkLC9vQ_Fg&si=v3lC1rKrHiDyS5iq")
 parser.getData()
 parser.setFileName()
 parser.getArt()

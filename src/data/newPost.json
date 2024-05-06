@@ -1,37 +1,37 @@
 {
-  "id": "yCkLC9vQ_Fg&si=v3lC1rKrHiDyS5iq",
+  "id": "doja-cat_headhigh",
   "artist": [
     "Doja Cat"
   ],
-  "name": "Streets",
+  "name": "HEADHIGH",
   "myDate": "todayyyy",
-  "releaseDate": "2019-11-07",
+  "releaseDate": "2024-04-05",
   "type": null,
   "palette": [
     [
-      246,
-      122,
-      167
+      204,
+      183,
+      158
     ],
     [
-      180,
-      54,
-      60
+      44,
+      37,
+      29
     ],
     [
-      250,
-      212,
-      222
+      130,
+      100,
+      71
     ],
     [
-      91,
-      16,
-      23
+      110,
+      79,
+      52
     ]
   ],
   "genre": [
     "To be added"
   ],
-  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_streets.md",
-  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_streets.jpg"
+  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_headhigh.md",
+  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_headhigh.jpg"
 }

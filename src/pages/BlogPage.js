@@ -6,7 +6,7 @@ import './BlogPage.css';
 
 function BlogPost() {
   const { postId } = useParams();
-  const { data, loading, error } = useFetchData(); // Use the hook to fetch all posts
+  const { data, loading, error } = useFetchData();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -18,7 +18,8 @@ function BlogPost() {
           .then(markdown => {
             setPost({
               ...postDetails,
-              content: marked(markdown) // Convert markdown to HTML here
+              content: marked(markdown), // markdown -> HTML 
+              palette: postDetails.palette.map(rgb => `rgb(${rgb.join(',')})`) //  RGB list -> CSS str
             });
           })
           .catch(error => {
@@ -29,24 +30,26 @@ function BlogPost() {
         setPost({ error: "Post not found." });
       }
     }
-  }, [data, postId]); // Dependency on data ensures this runs when data is fetched
+  }, [data, postId]);
+  
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!post) return <div>Loading post details...</div>;
 
   if (post.error) {
-    return <div>Error: {post.error}</div>; // Display errors if any
+    return <div>Error: {post.error}</div>; 
   }
 
   return (
-    <div className='blog-post'>
-      <h1>{post.name} </h1>
-      <h2>{post.artist}</h2>
-      <img src={post.imageUrl} alt={post.name} className='blog-post-img' />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content'/>  
+    <div className='blog-post' style={{ backgroundColor: post?.palette?.[0] }}>
+      <h1 style={{ color: post?.palette?.[1] }}>{post.name}</h1>
+      <h2 style={{ color: post?.palette?.[2] }}>{post.artist}</h2>
+      <img src={post.imageUrl} alt={post.name} className='blog-post-img' style={{ borderColor: post?.palette?.[3] }}/>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content'/>
     </div>
   );
+  
 }
 
 export default BlogPost;
