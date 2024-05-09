@@ -16,6 +16,7 @@ class MusicParser():
         }
         self.fileName = None
         self.type = None # either single, album, or mashup/edits
+        self.title = ""
 
     def setId(self, song_url):
         self.id = song_url.split("v=")[-1]
@@ -128,7 +129,7 @@ class MusicParser():
             "type": self.type,
             "palette": self.palette,
             "genre": ["To be added"],
-            "title": "",
+            "title": self.title,
             "markdownPath": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/{self.fileName}.md",
             "imageUrl": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/{self.fileName}.jpg"
         }
@@ -167,6 +168,7 @@ parser.getArt()
 parser.createMd()
 parser.getColorWheel()
 parser.genPost()
-# parser.addPost()
+parser.title = "Dreams of a Kid Again"
+parser.addPost()
 
 # parser.printColorWheel()

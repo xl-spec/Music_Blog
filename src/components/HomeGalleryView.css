@@ -15,6 +15,11 @@
   align-items: center;
   background-color: rgb(255, 197, 255);
   overflow: hidden;
+  transition: filter 0.3s ease;
+}
+
+.home-gallery-post:hover {
+  filter: brightness(125%);
 }
 
 .home-gallery-image {
@@ -22,6 +27,8 @@
   height: auto;
   border-radius: 5px;
   margin: 20px;
+  border-width: 4px;
+  border-style: solid;
 }
 
 .home-gallery-details {
@@ -29,14 +36,15 @@
   text-align: middle;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   width: 50%;
   text-wrap: pretty;
 }
 
 .home-gallery-title {
   font-size: 24px;
-  margin: 0;
+  font-weight: bold;
+  filter: dark;
 }
 
 .home-gallery-name {
@@ -47,13 +55,9 @@
 .home-gallery-artist {
   font-size: 12px;
   margin: 0;
+  font-style: italic;
 }
 
 .home-gallery-link {
   text-decoration: none;
-  color: inherit;
-}
-
-.home-gallery-post:hover {
-  background-color: rgb(255, 106, 210);
 }

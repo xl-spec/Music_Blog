@@ -1,38 +1,38 @@
 {
-  "id": "gabrielle-aplin_sweet-nothing",
+  "id": "joey-bada$$_righteous-minds",
   "artist": [
-    "Gabrielle Aplin"
+    "Joey Bada$$"
   ],
-  "name": "Sweet Nothing",
+  "name": "Righteous Minds",
   "myDate": "todayyyy",
-  "releaseDate": "2017-01-25",
+  "releaseDate": "2012-06-12",
   "type": null,
   "palette": [
     [
-      30,
-      30,
-      30
+      148,
+      116,
+      28
     ],
     [
-      174,
-      174,
-      174
+      58,
+      64,
+      32
     ],
     [
-      132,
-      132,
-      132
+      245,
+      241,
+      229
     ],
     [
-      124,
-      124,
-      124
+      159,
+      150,
+      160
     ]
   ],
   "genre": [
     "To be added"
   ],
   "title": "",
-  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/gabrielle-aplin_sweet-nothing.md",
-  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/gabrielle-aplin_sweet-nothing.jpg"
+  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/joey-bada$$_righteous-minds.md",
+  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg"
 }

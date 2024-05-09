@@ -151,6 +151,83 @@
       "title": "European Pop Hits Different",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/gabrielle-aplin_sweet-nothing.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/gabrielle-aplin_sweet-nothing.jpg"
+    },
+    {
+      "id": "cochise--$not_tell-em",
+      "artist": [
+        "Cochise",
+        "$NOT"
+      ],
+      "name": "Tell Em",
+      "myDate": "todayyyy",
+      "releaseDate": "2021-05-28",
+      "type": null,
+      "palette": [
+        [
+          43,
+          40,
+          55
+        ],
+        [
+          225,
+          161,
+          165
+        ],
+        [
+          100,
+          101,
+          191
+        ],
+        [
+          140,
+          156,
+          189
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "The Kids R Alright",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/cochise--$not_tell-em.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/cochise--$not_tell-em.jpg"
+    },
+    {
+      "id": "joey-bada$$_righteous-minds",
+      "artist": [
+        "Joey Bada$$"
+      ],
+      "name": "Righteous Minds",
+      "myDate": "todayyyy",
+      "releaseDate": "2012-06-12",
+      "type": null,
+      "palette": [
+        [
+          148,
+          116,
+          28
+        ],
+        [
+          58,
+          64,
+          32
+        ],
+        [
+          245,
+          241,
+          229
+        ],
+        [
+          159,
+          150,
+          160
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/joey-bada$$_righteous-minds.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg"
     }
   ]
 }

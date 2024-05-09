@@ -13,7 +13,15 @@ function HomePage() {
     <div className="home-page">
       <section className="home-gallery-content">
         {posts.map(post => (
-          <HomeGalleryView key={post.id} name={post.name} artist={post.artist} imageUrl={post.imageUrl} linkUrl={`/posts/${post.id}`} />
+          <HomeGalleryView 
+          key={post.id}
+          title={post.title}
+          name={post.name}
+          artist={post.artist}
+          imageUrl={post.imageUrl}
+          linkUrl={`/posts/${post.id}`}
+          palette={post.palette}
+        />
         ))}
       </section>
     </div>
