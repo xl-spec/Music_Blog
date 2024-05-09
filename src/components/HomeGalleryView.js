@@ -5,6 +5,7 @@ import './HomeGalleryView.css';
 const HomeGalleryView = ({ title, name, artist, imageUrl, linkUrl, palette }) => {
 
   let paletteMapped = palette.map(rgb => `rgb(${rgb.join(',')})`);
+  const artistNames = Array.isArray(artist) ? artist.join(' - ') : artist;
 
   return (
     <Link to={linkUrl} className="home-gallery-link">
@@ -13,7 +14,7 @@ const HomeGalleryView = ({ title, name, artist, imageUrl, linkUrl, palette }) =>
         <div className="home-gallery-details" style={{ color: paletteMapped[0] }}>
           <h2 className="home-gallery-title">{title}</h2>
           <h3 className="home-gallery-name">{name}</h3>
-          <h4 className="home-gallery-artist">{artist}</h4>
+          <h4 className="home-gallery-artist">{artistNames}</h4>
         </div>
       </div>
     </Link>

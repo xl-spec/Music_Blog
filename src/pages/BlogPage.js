@@ -19,7 +19,12 @@ function BlogPost() {
             setPost({
               ...postDetails,
               content: marked(markdown), // markdown -> HTML 
-              palette: postDetails.palette.map(rgb => `rgb(${rgb.join(',')})`) //  RGB list -> CSS str
+              palette: postDetails.palette.map((rgb, index) => {
+                if (index === 0) { // hack to get the background color to be lighter
+                  return `rgb(${rgb.map(color => Math.min(color + 40, 255)).join(',')})`;
+                }
+                return `rgb(${rgb.join(',')})`;
+              })
             });
           })
           .catch(error => {
@@ -40,13 +45,14 @@ function BlogPost() {
   if (post.error) {
     return <div>Error: {post.error}</div>; 
   }
+  const artistNames = Array.isArray(post.artist) ? post.artist.join(' - ') : post.artist;
 
   return (
     <div className='blog-post' style={{ backgroundColor: post?.palette?.[0] }}>
       <h1 style={{ color: post?.palette?.[1] }}>{post.name}</h1>
-      <h2 style={{ color: post?.palette?.[2] }}>{post.artist}</h2>
-      <img src={post.imageUrl} alt={post.name} className='blog-post-img' style={{ borderColor: post?.palette?.[3] }}/>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content'/>
+      <h2 style={{ color: post?.palette?.[2] }}>{artistNames}</h2>
+      {/* <img src={post.imageUrl} alt={post.name} className='blog-post-img' style={{ borderColor: post?.palette?.[3] }}/> */}
+      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content' style={{ color: post?.palette?.[1] }}/>
     </div>
   );
   

@@ -2,7 +2,7 @@
 /* Main content area */
 .blog-post {
   width: 100%;
-  background: #fff674;
+  /* background: #e9d900; */
   text-align: center;
   
 }
@@ -29,14 +29,4 @@
 .blog-post-content {
   font-size: 16px;
   color: #666;
-}
-
-/* Links styling */
-.blog-post-content a {
-  color: #1a0dab;
-  text-decoration: none;
-}
-
-.blog-post-content a:hover {
-  text-decoration: underline;
 }
