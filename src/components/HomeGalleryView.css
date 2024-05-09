@@ -24,20 +24,29 @@
   margin: 20px;
 }
 
-.home-gallery-title {
-  font-size: 24px;
+.home-gallery-details {
+  display: flex;
   text-align: middle;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
   text-wrap: pretty;
-  line-height: normal;
 }
 
-.home-gallery-summary {
-  color: #666;
-  font-size: 14px;
-  text-align: center;
+.home-gallery-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.home-gallery-name {
+  font-size: 16px;
+  margin: 0;
+}
+
+.home-gallery-artist {
+  font-size: 12px;
+  margin: 0;
 }
 
 .home-gallery-link {

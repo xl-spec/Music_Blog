@@ -34,6 +34,7 @@
       "genre": [
         "To be added"
       ],
+      "title": "Da Best Angst",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/lorde_white-teeth-teens.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/lorde_white-teeth-teens.jpg"
     },
@@ -71,43 +72,7 @@
       "genre": [
         "To be added"
       ],
-      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/playboi-carti_no.-9.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/playboi-carti_no.-9.jpg"
-    },
-    {
-      "id": "playboi-carti_no.-9",
-      "artist": [
-        "Playboi Carti"
-      ],
-      "name": "NO. 9",
-      "myDate": "todayyyy",
-      "releaseDate": "2017-04-14",
-      "type": null,
-      "palette": [
-        [
-          80,
-          74,
-          55
-        ],
-        [
-          206,
-          166,
-          145
-        ],
-        [
-          170,
-          155,
-          156
-        ],
-        [
-          169,
-          166,
-          156
-        ]
-      ],
-      "genre": [
-        "To be added"
-      ],
+      "title": "9",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/playboi-carti_no.-9.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/playboi-carti_no.-9.jpg"
     },
@@ -145,8 +110,47 @@
       "genre": [
         "To be added"
       ],
+      "title": "Going Above So High",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_headhigh.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_headhigh.jpg"
+    },
+    {
+      "id": "gabrielle-aplin_sweet-nothing",
+      "artist": [
+        "Gabrielle Aplin"
+      ],
+      "name": "Sweet Nothing",
+      "myDate": "todayyyy",
+      "releaseDate": "2015-08-06",
+      "type": null,
+      "palette": [
+        [
+          30,
+          30,
+          30
+        ],
+        [
+          174,
+          174,
+          174
+        ],
+        [
+          132,
+          132,
+          132
+        ],
+        [
+          124,
+          124,
+          124
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "European Pop Hits Different",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/gabrielle-aplin_sweet-nothing.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/gabrielle-aplin_sweet-nothing.jpg"
     }
   ]
 }

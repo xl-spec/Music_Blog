@@ -128,6 +128,7 @@ class MusicParser():
             "type": self.type,
             "palette": self.palette,
             "genre": ["To be added"],
+            "title": "",
             "markdownPath": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/{self.fileName}.md",
             "imageUrl": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/{self.fileName}.jpg"
         }
@@ -166,6 +167,6 @@ parser.getArt()
 parser.createMd()
 parser.getColorWheel()
 parser.genPost()
-parser.addPost()
+# parser.addPost()
 
 # parser.printColorWheel()
