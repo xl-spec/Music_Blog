@@ -225,9 +225,88 @@
       "genre": [
         "To be added"
       ],
-      "title": "",
+      "title": "Dreams of a Kid Again",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/joey-bada$$_righteous-minds.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg"
+    },
+    {
+      "id": "taylor-swift_lavender-haze",
+      "artist": [
+        "Taylor Swift"
+      ],
+      "name": "Lavender Haze",
+      "myDate": "todayyyy",
+      "releaseDate": "2022-10-21",
+      "type": null,
+      "palette": [
+        [
+          225,
+          219,
+          216
+        ],
+        [
+          42,
+          24,
+          42
+        ],
+        [
+          126,
+          69,
+          70
+        ],
+        [
+          185,
+          123,
+          103
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "Purple That Has Sound",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/taylor-swift_lavender-haze.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/taylor-swift_lavender-haze.jpg"
+    },
+    {
+      "id": "luna-li--jay-som--melina-duterte--hannah-kim_boring-again",
+      "artist": [
+        "Luna Li",
+        "Jay Som",
+        "Melina Duterte",
+        "Hannah Kim"
+      ],
+      "name": "Boring Again",
+      "myDate": "todayyyy",
+      "releaseDate": "2022-03-04",
+      "type": null,
+      "palette": [
+        [
+          131,
+          66,
+          47
+        ],
+        [
+          22,
+          25,
+          37
+        ],
+        [
+          234,
+          115,
+          58
+        ],
+        [
+          249,
+          193,
+          71
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "Electric Rainbows",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg"
     }
   ]
 }

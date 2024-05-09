@@ -1,38 +1,41 @@
 {
-  "id": "joey-bada$$_righteous-minds",
+  "id": "luna-li--jay-som--melina-duterte--hannah-kim_boring-again",
   "artist": [
-    "Joey Bada$$"
+    "Luna Li",
+    "Jay Som",
+    "Melina Duterte",
+    "Hannah Kim"
   ],
-  "name": "Righteous Minds",
+  "name": "Boring Again",
   "myDate": "todayyyy",
-  "releaseDate": "2012-06-12",
+  "releaseDate": "2022-03-04",
   "type": null,
   "palette": [
     [
-      148,
-      116,
-      28
+      131,
+      66,
+      47
     ],
     [
-      58,
-      64,
-      32
+      22,
+      25,
+      37
     ],
     [
-      245,
-      241,
-      229
+      234,
+      115,
+      58
     ],
     [
-      159,
-      150,
-      160
+      249,
+      193,
+      71
     ]
   ],
   "genre": [
     "To be added"
   ],
-  "title": "",
-  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/joey-bada$$_righteous-minds.md",
-  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg"
+  "title": "Electric Rainbows",
+  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.md",
+  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg"
 }
