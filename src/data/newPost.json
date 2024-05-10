@@ -1,41 +1,38 @@
 {
-  "id": "luna-li--jay-som--melina-duterte--hannah-kim_boring-again",
+  "id": "sky-ferreira_you\u2019re-not-the-one",
   "artist": [
-    "Luna Li",
-    "Jay Som",
-    "Melina Duterte",
-    "Hannah Kim"
+    "Sky Ferreira"
   ],
-  "name": "Boring Again",
+  "name": "You\u2019re Not The One",
   "myDate": "todayyyy",
-  "releaseDate": "2022-03-04",
+  "releaseDate": "2013-01-01",
   "type": null,
   "palette": [
     [
-      131,
       66,
-      47
+      80,
+      42
     ],
     [
-      22,
-      25,
-      37
+      178,
+      183,
+      144
     ],
     [
-      234,
-      115,
-      58
+      142,
+      175,
+      136
     ],
     [
-      249,
-      193,
-      71
+      148,
+      164,
+      148
     ]
   ],
   "genre": [
     "To be added"
   ],
   "title": "Electric Rainbows",
-  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.md",
-  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg"
+  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/sky-ferreira_you\u2019re-not-the-one.md",
+  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/sky-ferreira_you\u2019re-not-the-one.jpg"
 }

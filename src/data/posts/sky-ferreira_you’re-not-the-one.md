@@ -1,0 +1,1 @@
+Always a treat to discover a rock song from the 2000s. There's a essence I can't really describe. Something older and nostalgic even though it's a new song from me. Something about the style and the angst.

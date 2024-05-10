@@ -307,6 +307,44 @@
       "title": "Electric Rainbows",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg"
+    },
+    {
+      "id": "sky-ferreira_you\u2019re-not-the-one",
+      "artist": [
+        "Sky Ferreira"
+      ],
+      "name": "You\u2019re Not The One",
+      "myDate": "todayyyy",
+      "releaseDate": "2013-01-01",
+      "type": null,
+      "palette": [
+        [
+          66,
+          80,
+          42
+        ],
+        [
+          178,
+          183,
+          144
+        ],
+        [
+          142,
+          175,
+          136
+        ],
+        [
+          148,
+          164,
+          148
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "07' Pilot",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/sky-ferreira_you\u2019re-not-the-one.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/sky-ferreira_you\u2019re-not-the-one.jpg"
     }
   ]
 }
