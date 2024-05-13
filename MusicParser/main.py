@@ -167,7 +167,7 @@ parser.setFileName()
 parser.getArt()
 parser.createMd()
 parser.getColorWheel()
-parser.title = "Electric Rainbows"
+parser.title = "Zoomer Brain"
 parser.genPost()
 parser.addPost()
 

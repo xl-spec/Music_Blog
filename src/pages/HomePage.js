@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeGalleryView from '../components/HomeGalleryView';
+import HomeGalleryView from '../layout/HomeGalleryView';
 import useFetchData from '../hooks/useFetchData';
 import './HomePage.css';
 
@@ -8,7 +8,10 @@ function HomePage() {
   const { data, loading, error } = useFetchData();
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
-  const posts = data.posts;
+
+  // this is to get it post date order
+  const posts = data.posts.slice().reverse();
+
   return (
     <div className="home-page">
       <section className="home-gallery-content">

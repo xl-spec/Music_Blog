@@ -1,4 +1,10 @@
-.App {
-  text-align: center;
-  
+body, html, #root {
+  height: 100%;
+  margin: 0;
 }
+
+.content {
+  padding-bottom: 2rem; /* Ensure there's space for the footer */
+}
+
+/* Additional styles for NavBar, Header, and Footer */

@@ -345,6 +345,45 @@
       "title": "07' Pilot",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/sky-ferreira_you\u2019re-not-the-one.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/sky-ferreira_you\u2019re-not-the-one.jpg"
+    },
+    {
+      "id": "pinkpantheress--ice-spice_boy's-a-liar-pt.-2",
+      "artist": [
+        "PinkPantheress",
+        "Ice Spice"
+      ],
+      "name": "Boy's a liar Pt. 2",
+      "myDate": "2024-05-13",
+      "releaseDate": "2023-02-02",
+      "type": null,
+      "palette": [
+        [
+          56,
+          54,
+          54
+        ],
+        [
+          181,
+          177,
+          176
+        ],
+        [
+          154,
+          156,
+          158
+        ],
+        [
+          138,
+          146,
+          159
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "Zoomer Brain",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.jpg"
     }
   ]
 }

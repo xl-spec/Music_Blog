@@ -1,0 +1,32 @@
+
+.navbar {
+  background-color: #ffb8f9;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightNav {
+  display: flex;
+  gap: 3.0rem;
+}
+
+.navbar-button {
+  background-color: #ffd6fc;
+  border: none;
+  font-size: 2rem;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  /* border-bottom: 3px solid transparent; */
+}
+
+.navbar-button:hover {
+  background-color: #ff3ceb;
+  /* border-bottom: transparent; */
+}
+
+.navbar-button:active {
+  /* border-bottom: 3px solid #c928b9; */
+}

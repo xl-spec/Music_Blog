@@ -45,12 +45,12 @@ function BlogPost() {
   if (post.error) {
     return <div>Error: {post.error}</div>; 
   }
-  const artistNames = Array.isArray(post.artist) ? post.artist.join(' - ') : post.artist;
+  // const artistNames = Array.isArray(post.artist) ? post.artist.join(' - ') : post.artist;
 
   return (
     <div className='blog-post' style={{ backgroundColor: post?.palette?.[0] }}>
-      <h1 style={{ color: post?.palette?.[1] }}>{post.name}</h1>
-      <h2 style={{ color: post?.palette?.[2] }}>{artistNames}</h2>
+      <h1 style={{ color: post?.palette?.[1] }}>{post.title}</h1>
+      {/* <h2 style={{ color: post?.palette?.[2] }}>{artistNames}</h2> */}
       {/* <img src={post.imageUrl} alt={post.name} className='blog-post-img' style={{ borderColor: post?.palette?.[3] }}/> */}
       <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content' style={{ color: post?.palette?.[1] }}/>
     </div>

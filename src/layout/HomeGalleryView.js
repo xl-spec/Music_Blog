@@ -13,6 +13,7 @@ const HomeGalleryView = ({ title, name, artist, imageUrl, linkUrl, palette }) =>
         <img src={imageUrl} alt={name} className="home-gallery-image" style={{ borderColor: paletteMapped[3] }}/>
         <div className="home-gallery-details" style={{ color: paletteMapped[0] }}>
           <h2 className="home-gallery-title">{title}</h2>
+          <>________</>
           <h3 className="home-gallery-name">{name}</h3>
           <h4 className="home-gallery-artist">{artistNames}</h4>
         </div>

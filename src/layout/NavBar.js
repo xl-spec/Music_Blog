@@ -5,9 +5,6 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <div>
-      <div className="homeButtonContainer">
-        <Link to="/" className="homeButton">Home</Link>
-      </div>
       <nav className="navbar">
         <div className="rightNav">
           <Link to="/albums" className="navbar-button">Album</Link>
