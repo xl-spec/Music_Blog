@@ -460,6 +460,46 @@
       "title": "TikTok Brain",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/shelly_steeeam.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/shelly_steeeam.jpg"
+    },
+    {
+      "id": "coco-\\u0026-clair-clair--sofrozyne--alex-previty_pop-star",
+      "artist": [
+        "Coco \\u0026 Clair Clair",
+        "Sofrozyne",
+        "Alex Previty"
+      ],
+      "name": "Pop Star",
+      "myDate": "2024-05-13",
+      "releaseDate": "2020-12-18",
+      "type": null,
+      "palette": [
+        [
+          58,
+          52,
+          50
+        ],
+        [
+          195,
+          179,
+          171
+        ],
+        [
+          142,
+          162,
+          166
+        ],
+        [
+          130,
+          145,
+          159
+        ]
+      ],
+      "genre": [
+        "indie pop"
+      ],
+      "title": "Bubblegum Madness",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/coco-\\u0026-clair-clair--sofrozyne--alex-previty_pop-star.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/coco-\\u0026-clair-clair--sofrozyne--alex-previty_pop-star.jpg"
     }
   ]
 }

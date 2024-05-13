@@ -215,8 +215,8 @@ class GUI(tk.Tk):
             "palette": self.parser.palette,
             "genre": ["To be added"],
             "title": self.parser.title,
-            "markdownPath": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/{self.fileName}.md",
-            "imageUrl": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/{self.fileName}.jpg"
+            "markdownPath": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/{self.parser.fileName}.md",
+            "imageUrl": f"https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/{self.parser.fileName}.jpg"
         }
         self.json_text.delete(1.0, tk.END)
         self.json_text.insert(tk.END, json.dumps(json_data, indent=2))
