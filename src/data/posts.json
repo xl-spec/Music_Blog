@@ -384,6 +384,81 @@
       "title": "Zoomer Brain",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.md",
       "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.jpg"
+    },
+    {
+      "id": "daoko_kakete-ageru",
+      "artist": [
+        "DAOKO"
+      ],
+      "name": "Kakete Ageru",
+      "myDate": "todayyyy",
+      "releaseDate": "2015-03-25",
+      "type": null,
+      "palette": [
+        [
+          180,
+          180,
+          172
+        ],
+        [
+          22,
+          16,
+          16
+        ],
+        [
+          103,
+          69,
+          60
+        ],
+        [
+          141,
+          103,
+          78
+        ]
+      ],
+      "genre": [
+        "To be added"
+      ],
+      "title": "Taste Like Purple",
+      "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/daoko_kakete-ageru.md",
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/daoko_kakete-ageru.jpg"
+    },
+    {
+      "id": "shelly_steeeam",
+      "artist": [
+        "Shelly"
+      ],
+      "name": "Steeeam",
+      "myDate": "2024-05-13",
+      "releaseDate": "2020-10-30",
+      "type": "single",
+      "palette": [
+        [
+          173,
+          162,
+          158
+        ],
+        [
+          69,
+          95,
+          108
+        ],
+        [
+          94,
+          74,
+          76
+        ],
+        [
+          102,
+          87,
+          66
+        ]
+      ],
+      "genre": [
+        "indie pop"
+      ],
+      "title": "TikTok Brain",
+      "image": "../src/data/album_arts/shelly_steeeam.jpg"
     }
   ]
 }

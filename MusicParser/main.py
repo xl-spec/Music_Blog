@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 from colorthief import ColorThief
 from PIL import Image
 import re
+import tkinter as tk
+from tkinter import messagebox, scrolledtext
+
 class MusicParser():
     def __init__(self):
         self.id = None
@@ -20,6 +23,7 @@ class MusicParser():
 
     def setId(self, song_url):
         self.id = song_url.split("v=")[-1]
+        print(f"Video ID set to: {self.id}")
     
     def getData(self):
         html_url = f"https://www.youtube.com/watch?v={self.id}"
@@ -75,6 +79,9 @@ class MusicParser():
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
         album_art_dir = os.path.join(script_dir, "../src/data/album_arts")
+
+        if not os.path.exists(album_art_dir):
+            os.makedirs(album_art_dir)
 
         with open(os.path.join(album_art_dir, f"{self.fileName}.jpg"), "wb") as f:
             f.write(response.content)
@@ -157,18 +164,75 @@ class MusicParser():
             json.dump(posts, file, indent=2)
             file.truncate()
         print("New post added to posts.json")
-        
-parser = MusicParser()
-link = input("enter link:\n")
-parser.setId(link)
-# parser.setId("https://music.youtube.com/watch?v=yCkLC9vQ_Fg&si=v3lC1rKrHiDyS5iq")
-parser.getData()
-parser.setFileName()
-parser.getArt()
-parser.createMd()
-parser.getColorWheel()
-parser.title = "Zoomer Brain"
-parser.genPost()
-parser.addPost()
 
-# parser.printColorWheel()
+
+class GUI(tk.Tk):
+    def __init__(self, parser):
+        super().__init__()
+        self.parser = parser
+        self.title("Music Parser GUI")
+        self.geometry("600x900")
+
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.link_label = tk.Label(self, text="YouTube Link:")
+        self.link_label.pack()
+
+        self.link_entry = tk.Entry(self, width=50)
+        self.link_entry.pack()
+
+        self.get_data_button = tk.Button(self, text="Get and Generate Data", command=self.get_data)
+        self.get_data_button.pack()
+
+        self.json_text = scrolledtext.ScrolledText(self, wrap=tk.WORD, width=70, height=25)
+        self.json_text.pack()
+
+        self.confirm_button = tk.Button(self, text="Confirm Data", command=self.confirm_data)
+        self.confirm_button.pack()
+
+    def get_data(self):
+        self.json_text.delete(1.0, tk.END)
+        self.json_text.insert(tk.END, "Loading data...\n")
+        self.update_idletasks()  # Update the UI to show the loading message
+
+        link = self.link_entry.get()
+        self.parser.setId(link)
+        self.parser.getData()
+        self.parser.setFileName()
+        self.parser.getArt()
+        self.parser.getColorWheel()
+        self.parser.title = "Zoomer Brain"
+        self.parser.createMd()
+        self.parser.genPost()
+        json_data = {
+            "id": self.parser.fileName,
+            "artist": self.parser.data['artist'],
+            "name": self.parser.data['title'],
+            "myDate": 'todayyyy',
+            "releaseDate": self.parser.data['release_date'],
+            "type": self.parser.type,
+            "palette": self.parser.palette,
+            "genre": ["To be added"],
+            "title": self.parser.title,
+            "image": f"../src/data/album_arts/{self.parser.fileName}.jpg"  # Local path for Tkinter display
+        }
+        self.json_text.delete(1.0, tk.END)
+        self.json_text.insert(tk.END, json.dumps(json_data, indent=2))
+
+    def confirm_data(self):
+        try:
+            edited_json = self.json_text.get(1.0, tk.END).strip()
+            new_post = json.loads(edited_json)
+            with open("../src/data/newPost.json", 'w') as file:
+                json.dump(new_post, file, indent=2)
+            self.parser.addPost()
+            messagebox.showinfo("Confirm Data", "New post added to posts.json")
+        except Exception as e:
+            messagebox.showerror("Error", f"An error occurred while confirming the data: {e}")
+
+if __name__ == "__main__":
+    from main import MusicParser  # Replace with the correct import for your module
+    parser = MusicParser()
+    app = GUI(parser)
+    app.mainloop()

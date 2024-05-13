@@ -1,39 +1,37 @@
 {
-  "id": "pinkpantheress--ice-spice_boy's-a-liar-pt.-2",
+  "id": "shelly_steeeam",
   "artist": [
-    "PinkPantheress",
-    "Ice Spice"
+    "Shelly"
   ],
-  "name": "Boy's a liar Pt. 2",
-  "myDate": "todayyyy",
-  "releaseDate": "2023-02-02",
-  "type": null,
+  "name": "Steeeam",
+  "myDate": "2024-05-13",
+  "releaseDate": "2020-10-30",
+  "type": "single",
   "palette": [
     [
-      56,
-      54,
-      54
-    ],
-    [
-      181,
-      177,
-      176
-    ],
-    [
-      154,
-      156,
+      173,
+      162,
       158
     ],
     [
-      138,
-      146,
-      159
+      69,
+      95,
+      108
+    ],
+    [
+      94,
+      74,
+      76
+    ],
+    [
+      102,
+      87,
+      66
     ]
   ],
   "genre": [
-    "To be added"
+    "indie pop"
   ],
-  "title": "Zoomer Brain",
-  "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.md",
-  "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.jpg"
+  "title": "TikTok Brain",
+  "image": "../src/data/album_arts/shelly_steeeam.jpg"
 }
