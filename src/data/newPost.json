@@ -6,7 +6,7 @@
     "Alex Previty"
   ],
   "name": "Pop Star",
-  "myDate": "2024-05-13",
+  "myDate": "todayyyy",
   "releaseDate": "2020-12-18",
   "type": null,
   "palette": [
@@ -32,9 +32,9 @@
     ]
   ],
   "genre": [
-    "indie pop"
+    "To be added"
   ],
-  "title": "Bubblegum Madness",
+  "title": "Zoomer Brain",
   "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/coco-\\u0026-clair-clair--sofrozyne--alex-previty_pop-star.md",
   "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/coco-\\u0026-clair-clair--sofrozyne--alex-previty_pop-star.jpg"
 }
