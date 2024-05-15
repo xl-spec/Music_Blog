@@ -1,32 +1,46 @@
-
 .navbar {
   background-color: #ffb8f9;
-  padding: 1rem;
+  padding: 0.5rem 1rem; /* Adjusted padding for a balanced navbar height */
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Keeps items at the ends */
   align-items: center;
 }
 
 .rightNav {
   display: flex;
-  gap: 3.0rem;
+  align-items: center;
+  gap: 1rem; /* Adjusted gap for better spacing */
 }
 
 .navbar-button {
   background-color: #ffd6fc;
   border: none;
-  font-size: 2rem;
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 16px;
+  padding: 2rem 2rem; /* Adjusted padding for better button size */
   cursor: pointer;
-  /* border-bottom: 3px solid transparent; */
 }
 
 .navbar-button:hover {
   background-color: #ff3ceb;
-  /* border-bottom: transparent; */
 }
 
 .navbar-button:active {
   /* border-bottom: 3px solid #c928b9; */
+}
+
+.search-input {
+  margin-left: 1rem;
+  padding: 2rem 2rem;
+  border-radius: 30px;
+  border: none;
+}
+
+.spotify-iframe {
+  border-radius: 12px;
+  /* width: 250px; */
+  height: 152px;
+  border: none;
+  position: relative;
+
+  top: -10px; /* Move the iframe slightly up */
 }

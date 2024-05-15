@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <NavBar />
+      <NavBar spotifyLink={"https://open.spotify.com/track/5H8BPBnmDDeocTGbwCmYWm?si=01d3cef9ecde46c1"} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="posts/:postId" element={<BlogPostPage />} />
