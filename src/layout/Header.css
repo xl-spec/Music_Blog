@@ -2,7 +2,6 @@
     background-color: #ffb8f9;
     padding: 1.5rem;
     text-align: center;
-    /* border-radius: 8px; */
   }
   
   .header h1 {
@@ -17,6 +16,6 @@
   }
   
   .header-link:hover h1 {
-    color: #21a1f1; /* Change the text color on hover */
+    color: #21a1f1; 
   }
   
