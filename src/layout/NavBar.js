@@ -26,25 +26,32 @@ const NavBar = ({ spotifyLink }) => {
     }
   }, [location, spotifyLink]);
 
+  const getNavLinkClass = (path) => {
+    return location.pathname === path ? 'navbar-button active' : 'navbar-button';
+  };
+
   return (
     <div>
       <nav className="navbar">
-        <div className="rightNav">
-          <Link to="/albums" className="navbar-button">Album</Link>
-          <Link to="/singles" className="navbar-button">Single</Link>
-          <Link to="/mashupsoredits" className="navbar-button">Mashup/Edits</Link>
-          <Link to="/top10" className="navbar-button">Top 10</Link>
-          <Link to="/search" className="navbar-button">Search</Link>
+        <div className="nav-links">
+          <Link to="/albums" className={getNavLinkClass("/albums")}>Album</Link>
+          <Link to="/singles" className={getNavLinkClass("/singles")}>Single</Link>
+          <Link to="/mashupsoredits" className={getNavLinkClass("/mashupsoredits")}>Mashup/Edits</Link>
+          <Link to="/top10" className={getNavLinkClass("/top10")}>Top 10</Link>
+          <Link to="/search" className={getNavLinkClass("/search")}>Search</Link>
           <input type="text" name="search" id="search" className="search-input" placeholder="search..." />
-          {currentSpotifyLink && (
+        </div>
+        {currentSpotifyLink && (
+          <div className="spotify-container">
+            <div className="spotify-text">Song of the Week</div>
             <iframe
               className="spotify-iframe"
               src={`https://open.spotify.com/embed/track/${currentSpotifyLink.split('/').pop().split('?')[0]}?utm_source=generator`}
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
             ></iframe>
-          )}
-        </div>
+          </div>
+        )}
       </nav>
     </div>
   );

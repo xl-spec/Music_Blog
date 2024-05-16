@@ -1,46 +1,133 @@
 .navbar {
-  background-color: #ffb8f9;
-  padding: 0.5rem 1rem; /* Adjusted padding for a balanced navbar height */
+  background-color: #ffffff;
+  /* padding: 1.5rem 2rem; */
   display: flex;
-  justify-content: space-between; /* Keeps items at the ends */
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
 }
 
-.rightNav {
+.nav-links {
   display: flex;
-  align-items: center;
-  gap: 1rem; /* Adjusted gap for better spacing */
+  /* gap: 1.5rem; */
+  flex-grow: .4;
 }
 
 .navbar-button {
-  background-color: #ffd6fc;
+  background-color: transparent;
   border: none;
-  border-radius: 16px;
-  padding: 2rem 2rem; /* Adjusted padding for better button size */
+  padding: 2rem 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+  text-align: center;
+  flex-basis: 0; /* Ensure equal size for all buttons */
 }
 
 .navbar-button:hover {
-  background-color: #ff3ceb;
+  background-color: #f0f0f0;
 }
 
-.navbar-button:active {
-  /* border-bottom: 3px solid #c928b9; */
+.navbar-button:active,
+.navbar-button.active {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .search-input {
-  margin-left: 1rem;
-  padding: 2rem 2rem;
-  border-radius: 30px;
-  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  border: transparent;
+  flex: 1.5;
+}
+
+/* Container for the Spotify iframe and the text */
+.spotify-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: -87.5px;
+  right: 2rem;
 }
 
 .spotify-iframe {
   border-radius: 12px;
-  /* width: 250px; */
+  width: 250px;
   height: 152px;
   border: none;
-  position: relative;
+}
 
-  top: -10px; /* Move the iframe slightly up */
+.spotify-text {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .spotify-container {
+    top: 0;
+    right: 1rem;
+  }
+
+  .spotify-iframe {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .navbar-button {
+    flex: 1;
+    text-align: center;
+  }
+
+  .search-input {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .spotify-container {
+    right: 0.5rem;
+    order: 0;
+  }
+
+  .spotify-iframe {
+    width: 150px;
+    height: 90px;
+  }
+
+  .spotify-text {
+    font-size: 0.9rem;
+  }
 }

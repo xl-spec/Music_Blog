@@ -1,2 +1,15 @@
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/29pWNRvG3sugJEr05GgqlQ?utm_source=generator" width="250" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 https://open.spotify.com/track/29pWNRvG3sugJEr05GgqlQ?si=89bae7b310234789
+
+
+
+
+.spotify-iframe {
+  border-radius: 12px;
+  width: 250px;
+  height: 152px;
+  border: none;
+  position: absolute; /* Position absolutely */
+  top: -5rem; /* Move the iframe slightly up */
+  right: 2rem; /* Align it to the right */
+}
