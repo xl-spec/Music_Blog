@@ -36,7 +36,8 @@
       ],
       "title": "Da Best Angst",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/lorde_white-teeth-teens.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/lorde_white-teeth-teens.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/lorde_white-teeth-teens.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/35kahykNu00FPysz3C2euR?si=235192811434421a"
     },
     {
       "id": "playboi-carti_no.-9",
@@ -74,7 +75,8 @@
       ],
       "title": "9",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/playboi-carti_no.-9.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/playboi-carti_no.-9.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/playboi-carti_no.-9.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/5Nq6lLSxphlsA6nQB0KtES?si=00d68ce9ba90426a"
     },
     {
       "id": "doja-cat_headhigh",
@@ -112,7 +114,8 @@
       ],
       "title": "Going Above So High",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/doja-cat_headhigh.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_headhigh.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/doja-cat_headhigh.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/29pWNRvG3sugJEr05GgqlQ?si=064b9b10bdda4944"
     },
     {
       "id": "gabrielle-aplin_sweet-nothing",
@@ -150,7 +153,8 @@
       ],
       "title": "European Pop Hits Different",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/gabrielle-aplin_sweet-nothing.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/gabrielle-aplin_sweet-nothing.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/gabrielle-aplin_sweet-nothing.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/5rQ99yGrZePB0cfdhP2yTi?si=43c05ec0dd4048b4"
     },
     {
       "id": "cochise--$not_tell-em",
@@ -189,7 +193,8 @@
       ],
       "title": "The Kids R Alright",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/cochise--$not_tell-em.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/cochise--$not_tell-em.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/cochise--$not_tell-em.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/7nc7mlSdWYeFom84zZ8Wr8?si=eb95ab3259444b10"
     },
     {
       "id": "joey-bada$$_righteous-minds",
@@ -227,7 +232,8 @@
       ],
       "title": "Dreams of a Kid Again",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/joey-bada$$_righteous-minds.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/joey-bada$$_righteous-minds.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/7dFGkZbmm6cVlI28bfMaWE?si=b5c21e5176764d22"
     },
     {
       "id": "taylor-swift_lavender-haze",
@@ -265,7 +271,8 @@
       ],
       "title": "Purple That Has Sound",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/taylor-swift_lavender-haze.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/taylor-swift_lavender-haze.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/taylor-swift_lavender-haze.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/5jQI2r1RdgtuT8S3iG8zFC?si=59771ee4c9fb45fc"
     },
     {
       "id": "luna-li--jay-som--melina-duterte--hannah-kim_boring-again",
@@ -306,7 +313,8 @@
       ],
       "title": "Electric Rainbows",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/luna-li--jay-som--melina-duterte--hannah-kim_boring-again.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/0BCL8LBAmDNeSU22vt5uZ2?si=33abebfa220948c2"
     },
     {
       "id": "sky-ferreira_you\u2019re-not-the-one",
@@ -344,7 +352,8 @@
       ],
       "title": "07' Pilot",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/sky-ferreira_you\u2019re-not-the-one.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/sky-ferreira_you\u2019re-not-the-one.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/sky-ferreira_you\u2019re-not-the-one.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/0Px73m5ACfeYHYsAo9YTfP?si=9581444dd65a48c5"
     },
     {
       "id": "pinkpantheress--ice-spice_boy's-a-liar-pt.-2",
@@ -383,7 +392,8 @@
       ],
       "title": "Zoomer Brain",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/pinkpantheress--ice-spice_boy's-a-liar-pt.-2.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/6AQbmUe0Qwf5PZnt4HmTXv?si=d16b3762fd21450a"
     },
     {
       "id": "daoko_kakete-ageru",
@@ -421,7 +431,8 @@
       ],
       "title": "Taste Like Purple",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/daoko_kakete-ageru.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/daoko_kakete-ageru.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/daoko_kakete-ageru.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/2OenHX1mINW8WklAblGksE?si=7b4b777689c44c1b"
     },
     {
       "id": "shelly_steeeam",
@@ -459,7 +470,8 @@
       ],
       "title": "TikTok Brain",
       "markdownPath": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts/shelly_steeeam.md",
-      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/shelly_steeeam.jpg"
+      "imageUrl": "https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/album_arts/shelly_steeeam.jpg",
+      "spotifyUrl": "https://open.spotify.com/track/09RamrocZneYcLYLRIxYha?si=27650e57439948f0"
     },
     {
       "id": "coco--clair-clair--sofrozyne--alex-previty_pop-star",

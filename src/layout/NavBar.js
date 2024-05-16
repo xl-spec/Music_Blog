@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { SpotifyContext } from '../context/SpotifyContext';
 import './NavBar.css';
 
-const NavBar = ({ spotifyLink }) => {
+const NavBar = () => {
+  const { spotifyLink, setSpotifyLink } = useContext(SpotifyContext);
   const [currentSpotifyLink, setCurrentSpotifyLink] = useState('');
   const location = useLocation();
 
   useEffect(() => {
     const fetchSpotifyLinkForPost = async (postId) => {
       // Example fetching logic, replace with your actual data fetching logic
-      const response = await fetch(`/api/posts/${postId}`);
-      const postData = await response.json();
-      return postData.spotifyLink;
+      const response = await fetch('https://raw.githubusercontent.com/xl-spec/Music_Blog/main/src/data/posts.json');
+      const data = await response.json();
+      const post = data.posts.find(p => p.id === postId);
+      return post ? post.spotifyUrl : 'defaultSpotifyLinkForOtherPages';
     };
 
     const path = location.pathname;
@@ -21,7 +24,6 @@ const NavBar = ({ spotifyLink }) => {
       const postId = path.split('/').pop();
       fetchSpotifyLinkForPost(postId).then(link => setCurrentSpotifyLink(link));
     } else {
-      // Set the default link for other pages if needed
       setCurrentSpotifyLink('defaultSpotifyLinkForOtherPages');
     }
   }, [location, spotifyLink]);

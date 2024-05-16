@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { marked } from 'marked';
-import useFetchData from '../hooks/useFetchData';
+import { SpotifyContext } from '../context/SpotifyContext';
 import './BlogPage.css';
 
-function BlogPost() {
+function BlogPost({ data, loading, error }) {
   const { postId } = useParams();
-  const { data, loading, error } = useFetchData();
   const [post, setPost] = useState(null);
+  const { setSpotifyLink } = useContext(SpotifyContext);
 
   useEffect(() => {
     if (data) {
@@ -16,16 +16,18 @@ function BlogPost() {
         fetch(postDetails.markdownPath)
           .then(response => response.text())
           .then(markdown => {
-            setPost({
+            const postData = {
               ...postDetails,
-              content: marked(markdown), // markdown -> HTML 
+              content: marked(markdown),
               palette: postDetails.palette.map((rgb, index) => {
-                if (index === 0) { // hack to get the background color to be lighter
+                if (index === 0) {
                   return `rgb(${rgb.map(color => Math.min(color + 40, 255)).join(',')})`;
                 }
                 return `rgb(${rgb.join(',')})`;
               })
-            });
+            };
+            setPost(postData);
+            setSpotifyLink(postDetails.spotifyUrl); // Set Spotify link
           })
           .catch(error => {
             console.log(error);
@@ -35,27 +37,22 @@ function BlogPost() {
         setPost({ error: "Post not found." });
       }
     }
-  }, [data, postId]);
-  
+  }, [data, postId, setSpotifyLink]);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!post) return <div>Loading post details...</div>;
 
   if (post.error) {
-    return <div>Error: {post.error}</div>; 
+    return <div>Error: {post.error}</div>;
   }
-  // const artistNames = Array.isArray(post.artist) ? post.artist.join(' - ') : post.artist;
 
   return (
     <div className='blog-post' style={{ backgroundColor: post?.palette?.[0] }}>
       <h1 style={{ color: post?.palette?.[1] }}>{post.title}</h1>
-      {/* <h2 style={{ color: post?.palette?.[2] }}>{artistNames}</h2> */}
-      {/* <img src={post.imageUrl} alt={post.name} className='blog-post-img' style={{ borderColor: post?.palette?.[3] }}/> */}
-      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content' style={{ color: post?.palette?.[1] }}/>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} className='blog-post-content' style={{ color: post?.palette?.[1] }} />
     </div>
   );
-  
 }
 
 export default BlogPost;
