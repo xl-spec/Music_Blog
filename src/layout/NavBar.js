@@ -4,7 +4,7 @@ import { SpotifyContext } from '../context/SpotifyContext';
 import './NavBar.css';
 
 const NavBar = () => {
-  const { spotifyLink, setSpotifyLink } = useContext(SpotifyContext);
+  const { spotifyLink } = useContext(SpotifyContext);
   const [currentSpotifyLink, setCurrentSpotifyLink] = useState('');
   const location = useLocation();
 
